@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./backend-springbootapp
-          file: ./backend-springbotapp/backend.Dockerfile
+          file: ./backend-springbootapp/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansiblepractice1-backend:latest
 
